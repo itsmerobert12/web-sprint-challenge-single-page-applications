@@ -95,7 +95,7 @@ function Form() {
 
     const formSubmit = (e) => {
         e.preventDefault();
-        axios.post('https://reqres.in/api/orders', form)
+        axios.post(`https://reqres.in/api/orders`, form)
             .then(res => { console.log('RES', res) })
             .catch(err => console.log(err.response));
         setForm(defaultVal)
